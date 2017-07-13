@@ -1,173 +1,516 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- so meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="web house">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="web house">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="web house">
-    
-    
-        
-          
-              <link rel="shortcut icon" href="/images/favicon.ico">
-          
-        
-        
-          
-            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
-          
-        
-        
-          
-            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-          
-        
-    
-    <!-- title -->
-    <title>web house</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- rss -->
-    
-    
-</head>
 
-<body>
-    
-    <div class="content index width mx-auto px2 my4">
-        
-          <header id="header">
-  <a href="/">
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  
+      <title>web house</title>
+  
+  
+  
   
     
-      <div id="logo" style="background-image: url(/images/logo.png);"></div>
-    
   
-    <div id="title">
-      <h1>web house</h1>
-    </div>
-  </a>
-  <div id="nav">
-    <ul>
-      <li class="icon">
-        <a href="#"><i class="fa fa-bars fa-2x"></i></a>
-      </li>
-       
-        <li><a href="/">首页</a></li>
-       
-        <li><a href="/about/">分类</a></li>
-       
-        <li><a href="/archives/">生活</a></li>
-       
-        <li><a href="http://github.com/fighting1992">Projects</a></li>
-      
-    </ul>
-  </div>
+  
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/gridlex.min.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+<link rel="stylesheet" href="/css/theme.css">
+<link rel="stylesheet" href="/css/share.min.css">
+<link rel="stylesheet" href="/css/lightbox.min.css">
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+  <header class="header">
+	<div class="header-title">
+		<div><a href="/">web house</a></div>
+	</div>
+	<div id="header-menu-container">
+		<nav class="menu">
+	
+		
+	
+	
+	
+		
+		
+			<div class='menu-item'>
+			
+				<div class='menu-icon'>
+				<a href="/">
+					<img src="/images/home.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/">
+							<span>首页</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item'>
+			
+				<div class='menu-icon'>
+				<a href="/archives">
+					<img src="/images/archive.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/archives">
+							<span>归档</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/web">
+					<img src="/images/projects.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/web">
+							<span>前端</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/notes">
+					<img src="/images/notes.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/notes">
+							<span>随笔</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item'>
+			
+				<div class='menu-icon'>
+				<a href="/resume">
+					<img src="/images/resume.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/resume">
+							<span>简历</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+</nav>
+
+	</div>
 </header>
 
-        
-        <section id="about">
-  
-  <p style="display: inline">
-    
-      Find me on
-      <ul id="sociallinks">
-        
-          <li><a class="icon" target="_blank" href="http://github.com/gabithume/cactus-light" title="github"><i class="fa fa-github"></i></a></li>
-        
-          <li><a class="icon" target="_blank" href="/" title="twitter"><i class="fa fa-twitter"></i></a></li>
-        
-          <li><a class="icon" target="_blank" href="/" title="facebook"><i class="fa fa-facebook"></i></a></li>
-        
-          <li><a class="icon" target="_blank" href="/" title="linkedin"><i class="fa fa-linkedin"></i></a></li>
-        
-      </ul>.
-    
-  </p>
-</section>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div style="flex: 1;">
+      <div class="container">
 
-<section id="writing">
-  <span class="h1"><a href="/archives">Writing</a></span>
-  <ul class="post-list">
-    
-      
-    
-    
-      <li class="post-item">
-        
-    <div class="meta">
-        <time datetime="2017-07-12T10:17:45.000Z" itemprop="datePublished">2017-07-12</time>
-    </div>
+	<div class='index-intro'>
+		
+	</div>
 
+	
+		<div class="grid-2_md-1 grid-equalHeight">
+		
+			<div class="col">
+	<div class='Card Card-hover'>
+		
+			
+				
+					
+					
+				
+			
+		
+		
+		<div class='Card-figure'>
+			
+				<a href="/2017/07/13/second/">
+			
+			
+				<img src="/images/notes.svg" alt="">
+			
+			</a>
+		</div>
+		<div class="Card-body">
 
-        <span>
-    
-        <a class="" href="/2017/07/12/hello-world/">Hello World</a>
-    
+				<div class='Card-title'>
+					<h2>
+					
+						<a href="/2017/07/13/second/">
+					
+					Second</a></h2>
+					<p class='Card-title-tags'>
 
+	<label><a href="/tags/测试/">#测试</a></label>
 
-</span>
-      </li>
-    
-  </ul>
-  
-</section>
+</p>
+				</div>
+				<div class='Card-excerpt'>
+					<p>
+					
+						<a href="/2017/07/13/second/">
+					
+					No content </a></p>
+					<p>
 
+	<label><a href="/tags/测试/">#测试</a></label>
 
+</p>
+				</div>
+				<div class="Card-meta">
+					<p>2017-07-13</p>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+		
+			<div class="col">
+	<div class='Card Card-hover'>
+		
+			
+				
+					
+					
+				
+			
+		
+		
+		<div class='Card-figure'>
+			
+				<a href="/2017/07/13/第一篇test/">
+			
+			
+				<img src="/images/web.svg" alt="">
+			
+			</a>
+		</div>
+		<div class="Card-body">
 
-    </div>
-    
-    <footer id="footer">
-  <div class="footer-left">
-    Copyright &copy; 2017 chenyan
+				<div class='Card-title'>
+					<h2>
+					
+						<a href="/2017/07/13/第一篇test/">
+					
+					第一篇Test</a></h2>
+					<p class='Card-title-tags'>
+
+	<label><a href="/tags/测试/">#测试</a></label>
+
+</p>
+				</div>
+				<div class='Card-excerpt'>
+					<p>
+					
+						<a href="/2017/07/13/第一篇test/">
+					
+					
+ </a></p>
+					<p>
+
+	<label><a href="/tags/测试/">#测试</a></label>
+
+</p>
+				</div>
+				<div class="Card-meta">
+					<p>2017-07-13</p>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+		
+			<div class="col">
+	<div class='Card Card-hover'>
+		
+			
+			
+		
+		
+		<div class='Card-figure'>
+			
+				<a href="/2017/07/12/hello-world/">
+			
+			
+				<img src="/images/uncategorized.svg" alt="">
+			
+			</a>
+		</div>
+		<div class="Card-body">
+
+				<div class='Card-title'>
+					<h2>
+					
+						<a href="/2017/07/12/hello-world/">
+					
+					Hello World</a></h2>
+					<p class='Card-title-tags'></p>
+				</div>
+				<div class='Card-excerpt'>
+					<p>
+					
+						<a href="/2017/07/12/hello-world/">
+					
+					Welcome to Hexo! This is your very first post. Check  </a></p>
+					<p></p>
+				</div>
+				<div class="Card-meta">
+					<p>2017-07-12</p>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+		
+		</div>
+	
+	<br>
+	<div class='pagination'>
+	
+	
+	
+		<div class="pagination-item">
+			
+			
+				<span>1</span>
+			
+		</div>
+	
+
+	
+</div>
+</div>
   </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-         
-          <li><a href="/">首页</a></li>
-         
-          <li><a href="/about/">分类</a></li>
-         
-          <li><a href="/archives/">生活</a></li>
-         
-          <li><a href="http://github.com/fighting1992">Projects</a></li>
+
+  <footer class='footer'>
+    <div class='footer-logo'>
+        <span>cy</span>
+    </div>
+    <div class='footer-social'>
         
-      </ul>
-    </nav>
-  </div>
+        
+    </div>
+    <p> Copyright by <a href="">@chenyan</a> in 2017</p>
 </footer>
 
+
+  <div id="footer-menu-container">
+		<nav class="menu">
+	
+		
+	
+	
+	
+		
+		
+			<div class='menu-item'>
+			
+				<div class='menu-icon'>
+				<a href="/">
+					<img src="/images/home.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/">
+							<span>首页</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item'>
+			
+				<div class='menu-icon'>
+				<a href="/archives">
+					<img src="/images/archive.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/archives">
+							<span>归档</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/web">
+					<img src="/images/projects.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/web">
+							<span>前端</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/notes">
+					<img src="/images/notes.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/notes">
+							<span>随笔</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item'>
+			
+				<div class='menu-icon'>
+				<a href="/resume">
+					<img src="/images/resume.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/resume">
+							<span>简历</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+</nav>
+
+	</div>
+
+  <script src="/js/instantclick.min.js"></script>
+<script src="/js/social-share.min.js"></script>
+<script src="/js/theme.js"></script>
+<script src="/js/lightbox-plus-jquery.min.js"></script>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://qutang-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+<script data-no-instant>
+InstantClick.on('change', function(isInitialLoad) {
+  if (isInitialLoad === false) {
+    if (typeof MathJax !== 'undefined') // support MathJax
+      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    if (typeof prettyPrint !== 'undefined') // support google code prettify
+      prettyPrint();
+    if (typeof _hmt !== 'undefined')  // support 百度统计
+      _hmt.push(['_trackPageview', location.pathname + location.search]);
+    if (typeof ga !== 'undefined')  // support google analytics
+        ga('send', 'pageview', location.pathname + location.search);
+    changeLayoutOnTouchScreen();
+
+    //
+    var d = document, s = d.createElement('script');
+    s.src = 'https://qutang-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    }
+  }
+  
+});
+InstantClick.init();
+</script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
-<!-- styles -->
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
-<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
-
-
-<!-- jquery -->
-<script src="/lib/jquery/jquery.min.js"></script>
-<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
-<script src="/js/main.js"></script>
-<!-- Google Analytics -->
-
-    <script type="text/javascript">
-        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-86660611-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-<!-- Disqus Comments -->
-
-
