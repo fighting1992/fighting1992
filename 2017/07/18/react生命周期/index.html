@@ -11,6 +11,8 @@
   
     
   
+      <title>react生命周期 - web house</title>
+  
   
   <meta name="description" content="">
   <meta name="author" content="">
@@ -169,21 +171,89 @@
     }
 </style>
 
-<section class="page">
+<article class="article">
+
     <!-- Title -->
+
+    
+        
+            
+                
+                
+            
+        
+    
+
     <div class='article-header'>
+         <div class='article-logo'>
+            <a href="/categories/web/">
+                <img src="/images/web.svg" alt="">
+            </a>
+         </div>
          <h1 class='article-title'>
-            <a href="/resume/index.html">
-                个人简介
+            <a href="/2017/07/18/react生命周期/">
+                React生命周期
             </a>
         </h1>
     </div>
+   
+    <!-- Date and Author -->
+    <div class="article-desc">
+        <p class="date-author">
+            2017-07-18
+            by chenyan
+        </p>
+        <p class="tags">
+            tags：
+
+	<label><a href="/tags/react/">#React</a></label>
+
+
+        </p>
+    </div>
 	<hr />
+
+    <!-- Gallery -->
+    
+    
+
     <!-- Content -->
-    <h2 id="毕业学校"><a href="#毕业学校" class="headerlink" title="毕业学校"></a>毕业学校</h2><h2 id="工作经验"><a href="#工作经验" class="headerlink" title="工作经验"></a>工作经验</h2>
+    <h2 id="componentWillMount"><a href="#componentWillMount" class="headerlink" title="componentWillMount"></a>componentWillMount</h2><ul>
+<li>组件首次渲染完成之前执行，只执行一次</li>
+</ul>
+<h2 id="componentDidMount"><a href="#componentDidMount" class="headerlink" title="componentDidMount"></a>componentDidMount</h2><ul>
+<li>真实的dom被渲染出来后调用，此时可通过refs访问到真实dom，注册事件等</li>
+</ul>
+<h2 id="componentWillReceiveProps"><a href="#componentWillReceiveProps" class="headerlink" title="componentWillReceiveProps"></a>componentWillReceiveProps</h2><ul>
+<li>组件接收到新的props时调用，并将其作为参数nextProps使用，此时可以更改组件props及state。</li>
+</ul>
+<h2 id="componentWillUpdate"><a href="#componentWillUpdate" class="headerlink" title="componentWillUpdate"></a>componentWillUpdate</h2><ul>
+<li>接收到新的props或者state后，进行渲染之前调用，此时不允许更新props或state。</li>
+</ul>
+<h2 id="componentDidUpdate"><a href="#componentDidUpdate" class="headerlink" title="componentDidUpdate"></a>componentDidUpdate</h2><ul>
+<li>完成渲染新的props或者state后调用，此时可以访问到新的DOM元素。</li>
+</ul>
+<h2 id="shouldComponentUpdate"><a href="#shouldComponentUpdate" class="headerlink" title="shouldComponentUpdate"></a>shouldComponentUpdate</h2><ul>
+<li>组件是否应当渲染新的props或state，返回false表示跳过后续的生命周期方法</li>
+</ul>
+<h2 id="componentWillUnmount"><a href="#componentWillUnmount" class="headerlink" title="componentWillUnmount"></a>componentWillUnmount</h2><ul>
+<li>组件卸载之前调用，多用于注销事件、清除定时器等</li>
+</ul>
+
     <hr />
+
+    <br />
+    <br />
+    <h2>Share and comment</h2>
     <div class="social-share"></div>
-</section>
+    
+        <div id="disqus_thread"></div>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+    
+    
+</article>
   </div>
 
   <footer class='footer'>
