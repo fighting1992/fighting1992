@@ -52,7 +52,7 @@
 
 body {
 	background-color: #f5f5f5;
-	font-size: 16px;
+	font-size: 14px;
 	font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 	line-height: 1.8;
 	text-rendering: geometricPrecision;
@@ -101,6 +101,15 @@ ol{
     content: '📎';
 	font-size: 0.9em;
     color: #D63E0A;
+}
+
+@media (max-width: 400px) {
+	.article h2:before, .page h2:before {
+		left: -10px;
+	}
+	.article h3:before {
+		left: -15px;
+	}
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
