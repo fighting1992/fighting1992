@@ -9,9 +9,9 @@
   
   
   
-      <title>notes - Category - web house</title>
-  
     
+  
+      <title>git常用命令 - web house</title>
   
   
   <meta name="description" content="">
@@ -165,45 +165,99 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div style="flex: 1;">
-      <div class="container">
-	
-		<h2><a href="#">Category:notes</a></h2>
-		<div class="grid-4_sm-1 grid-equalHeight">
-		
-			<div class="col">
-	<div class='Card-archive'>
-		<div class="Card-body">
-			<p class='Card-title'>
-				
-					<a href="/2017/07/13/second/">
-				
-				Second</a>
-			</p>
-			<small class="Card-meta">
-				2017-07-13
-			</small>
-		</div>
-	</div>
-</div>
-		
-		</div>
-	
-</div>
+      <style>
+    body {
+        background-color: white;
+    }
+</style>
 
-<div class='pagination'>
-	
-	
-	
-		<div class="pagination-item">
-			
-			
-				<span>1</span>
-			
-		</div>
-	
+<article class="article">
 
-	
-</div>
+    <!-- Title -->
+
+    
+        
+            
+                
+                
+            
+        
+    
+
+    <div class='article-header'>
+         <div class='article-logo'>
+            <a href="/categories/web/">
+                <img src="/images/web.svg" alt="">
+            </a>
+         </div>
+         <h1 class='article-title'>
+            <a href="/2017/07/13/git常用命令/">
+                Git常用命令
+            </a>
+        </h1>
+    </div>
+   
+    <!-- Date and Author -->
+    <div class="article-desc">
+        <p class="date-author">
+            2017-07-13
+            by chenyan
+        </p>
+        <p class="tags">
+            tags：
+
+	<label><a href="/tags/git/">#Git</a></label>
+
+
+        </p>
+    </div>
+	<hr />
+
+    <!-- Gallery -->
+    
+    
+
+    <!-- Content -->
+    <h2 id="拉取远程仓库并创建自己的分支"><a href="#拉取远程仓库并创建自己的分支" class="headerlink" title="拉取远程仓库并创建自己的分支"></a>拉取远程仓库并创建自己的分支</h2><ol>
+<li>克隆远程仓库到本地 <code>git clone git://xxxx.git</code> 或者 <code>git clone http:// xxxx.git</code></li>
+<li>查看分支 <code>git branch -a</code></li>
+<li>切换分支 <code>git checkout xxx</code></li>
+<li>创建分支 <code>git branch xxx</code> </li>
+<li>创建分支并切换到此分支 <code>git checkout -b xxx</code></li>
+</ol>
+<h2 id="提交代码"><a href="#提交代码" class="headerlink" title="提交代码"></a>提交代码</h2><ol>
+<li>从远端更新到本地 <code>git pull origin xxx</code></li>
+<li>查看状态 <code>git status</code></li>
+<li>添加到暂存区 <code>git add .</code> 或者 <code>git add xxx</code></li>
+<li>提交当前暂存区代码 <code>git commit -m &quot;本次提交注释&quot;</code></li>
+<li>提交到远端仓库 <code>git push origin xxx</code></li>
+</ol>
+<h2 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h2><ol>
+<li>合并其他分支 <code>git merge origin/xxx</code></li>
+<li>解决冲突后 重新add</li>
+</ol>
+<h2 id="其他（很重要！！）"><a href="#其他（很重要！！）" class="headerlink" title="其他（很重要！！）"></a>其他（很重要！！）</h2><ol>
+<li>删除分支 <code>git branch -d xxx</code> (d只能删除已经参与过merge的分支)</li>
+<li>强制删除分支 <code>git branch -D xxx</code></li>
+<li>查看操作记录 <code>git log</code></li>
+<li>重置回上一版本 <code>git reset --hard head</code> (超级有用，误操作之后恢复线上版本)</li>
+<li>记录所有head的历史 <code>git reflog</code> (可找回reset丢掉的commit)</li>
+</ol>
+
+    <hr />
+
+    <br />
+    <br />
+    <h2>Share and comment</h2>
+    <div class="social-share"></div>
+    
+        <div id="disqus_thread"></div>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+    
+    
+</article>
   </div>
 
   <footer class='footer'>
