@@ -52,7 +52,7 @@
 
 body {
 	background-color: #f5f5f5;
-	font-size: 18px;
+	font-size: 16px;
 	font-family: "微软雅黑","PT Sans", sans-serif;
 	line-height: 1.8;
 	text-rendering: geometricPrecision;
@@ -124,7 +124,7 @@ h1 {
 	font-size: 1.8em;
 }
 h2 { 
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-weight: 500;
 }
 
@@ -162,8 +162,9 @@ a:hover {
 /* code */
 code {
 	padding: 3px;
-	background-color: #f2f2f2;
+	background-color: #b6d2c7;
 	border-radius: 2px;
+	font-size: 14px;
 }
 
 pre code {
@@ -173,12 +174,13 @@ pre code {
 	border-radius: 0px;
 	margin-left: 1em;
 	margin-top: 0.5em;
+	font-size: 16px;
 }
 
 figure.highlight {
 	margin: 0;
 	width: 100%;
-	background-color: #f2f2f2;
+	background-color: #b6d2c7;
 }
 
 .highlight figcaption {
@@ -231,7 +233,7 @@ pre .marked {
 
 pre {
 	margin: 0.25em;
-	background-color: #f2f2f2;
+	background-color: #b6d2c7;
 	width: 100%;
 }
 
@@ -691,8 +693,9 @@ img {
 	animation-name: fadeInLeft;
 	animation-duration: 0.5s;
   	animation-fill-mode: both;
-	background: #f0f1fa;
+	background: #f0f6fa;
 	padding: 10px 30px 30px 30px;
+	font-size: 18px;
 }
 
 .article a {
