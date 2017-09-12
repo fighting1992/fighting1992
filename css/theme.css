@@ -500,6 +500,7 @@ img {
 	box-shadow: 0.5px 0.5px 3px -0.5px rgba(170, 175, 173, 0.61);
 	margin: 0.5em;
 	min-height: 12em;
+	font-size: 14px;
 }
 
 .Card-archive {
@@ -554,6 +555,7 @@ img {
 
 .Card-title h2{
 	margin-bottom: 0;
+	font-size: 1.2em;
 }
 
 .Card-title label{
